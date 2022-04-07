@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "327addae5fdfd242",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "2c74fe28d5a812dc",
         "type": "inject",
         "z": "11b1d7dcc4c65822",
@@ -45,6 +53,55 @@
         "links": [],
         "x": 415,
         "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8eb8313113f7bf37",
+        "type": "link in",
+        "z": "327addae5fdfd242",
+        "name": "",
+        "links": [],
+        "x": 305,
+        "y": 180,
+        "wires": [
+            [
+                "fe9677741e89f622"
+            ]
+        ]
+    },
+    {
+        "id": "fe9677741e89f622",
+        "type": "function",
+        "z": "327addae5fdfd242",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 180,
+        "wires": [
+            [
+                "a717be3562525330"
+            ]
+        ]
+    },
+    {
+        "id": "a717be3562525330",
+        "type": "debug",
+        "z": "327addae5fdfd242",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 180,
         "wires": []
     }
 ]
